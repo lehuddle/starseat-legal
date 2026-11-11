@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — StarSeat</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout: single-column document, title-card header, numbered sections like a film programme */
+  :root {
+    --bg: #F8F3E6;
+    --surface: #FFFBF2;
+    --fg: #201C17;
+    --muted: #6E6554;
+    --accent: #8A6A24;
+    --line: #E4D8BC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14120E;
+      --surface: #201C17;
+      --fg: #EDE3D0;
+      --muted: #9C9282;
+      --accent: #C9A24B;
+      --line: #37312A;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14120E;
+    --surface: #201C17;
+    --fg: #EDE3D0;
+    --muted: #9C9282;
+    --accent: #C9A24B;
+    --line: #37312A;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Work Sans", -apple-system, "Segoe UI", sans-serif;
+    padding-inline: 20px;
+    padding-block: 48px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .wordmark {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+
+  .intro {
+    font-size: 16px;
+    color: var(--fg);
+    margin: 28px 0 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+
+  nav.toc {
+    margin: 36px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding-block: 18px;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  nav.toc a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    width: 1.4em;
+    flex: none;
+  }
+
+  section {
+    margin-top: 44px;
+    scroll-margin-top: 20px;
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h3 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 22px 0 8px;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 20px; max-width: 62ch; }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 0 0 14px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  a { color: var(--accent); }
+  a:not(nav.toc a) { text-decoration-thickness: 1px; }
+
+  .contact-block {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .contact-block .name {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contact-block .email {
+    font-size: 15px;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .not-list {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+    max-width: 62ch;
+  }
+  .not-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+  .not-list li::before {
+    content: "—";
+    color: var(--accent);
+    flex: none;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="wordmark">StarSeat</p>
+  <p class="meta"><a href="en.html">English version</a></p>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : 11 novembre 2026</p>
+  <p class="meta">Application mobile iOS — StarSeat</p>
+  <div class="intro">StarSeat est un jeu où chacun imagine les invités de ses tables idéales, à partir d'une liste de noms de personnalités. Cette page explique, sans jargon, ce que l'application fait des données — et surtout tout ce qu'elle ne fait pas.</div>
+  <nav class="toc" aria-label="Sommaire"><ol><li><a href="#qui"><span class="num">1</span> Qui édite cette application</a></li><li><a href="#principe"><span class="num">2</span> Le principe : aucune donnée envoyée</a></li><li><a href="#local"><span class="num">3</span> Ce que l'app enregistre sur ton téléphone</a></li><li><a href="#jamais"><span class="num">4</span> Ce que nous ne faisons jamais</a></li><li><a href="#tiers"><span class="num">5</span> Services tiers</a></li><li><a href="#conservation"><span class="num">6</span> Durée de conservation</a></li><li><a href="#droits"><span class="num">7</span> Tes droits</a></li><li><a href="#retrait"><span class="num">8</span> Personnalités citées et demande de retrait</a></li><li><a href="#age"><span class="num">9</span> Âge minimum</a></li><li><a href="#modifs"><span class="num">10</span> Modifications de cette politique</a></li><li><a href="#contact"><span class="num">11</span> Contact</a></li></ol></nav>
+<section id="qui"><h2><span class="num">01</span> Qui édite cette application</h2><p>StarSeat est développée et éditée par Anthony Raitif, développeur indépendant. L'application est distribuée sur l'App Store sous l'identifiant <code>com.antohny.toptable</code>.</p></section>
+<section id="principe"><h2><span class="num">02</span> Le principe : aucune donnée envoyée</h2><p>StarSeat ne demande pas de créer de compte : pas de nom, pas d'adresse e-mail, pas de numéro de téléphone, pas de mot de passe. L'application <strong>ne se connecte à aucun serveur</strong> : tout ce qu'elle fait se passe sur ton téléphone. Aucune donnée n'est envoyée à l'éditeur ni à un tiers.</p></section>
+<section id="local"><h2><span class="num">03</span> Ce que l'app enregistre sur ton téléphone</h2><p>Uniquement dans le stockage local de l'application, pour qu'elle se souvienne de toi d'une session à l'autre :</p><ul><li>la <strong>langue</strong> que tu as choisie ;</li><li>tes <strong>plans de salle</strong> : les tables que tu as remplies et les noms que tu y as placés.</li></ul><p>Ces données ne quittent jamais ton téléphone. Elles sont supprimées si tu désinstalles l'application, ou si tu supprimes un plan dans l'app.</p><p><strong>Partage :</strong> quand tu partages une table ou un plan, l'application en fait une image et ouvre le menu de partage de ton téléphone. Tu choisis toi-même où l'envoyer ; l'application ne transmet rien.</p><p><strong>Position, contacts, photos, micro, caméra :</strong> l'application n'y accède pas.</p></section>
+<section id="jamais"><h2><span class="num">04</span> Ce que nous ne faisons jamais</h2><ul class="not-list"><li>Vendre ou transmettre tes données (nous n'en recevons aucune).</li><li>Afficher de la publicité ou intégrer un outil de mesure d'audience ou de suivi.</li><li>Te suivre d'une application ou d'un site web à l'autre.</li><li>Collecter un identifiant publicitaire (IDFA).</li><li>Te demander de créer un compte ou de saisir du texte libre : tu choisis uniquement parmi une liste préparée.</li></ul></section>
+<section id="tiers"><h2><span class="num">05</span> Services tiers</h2><p>L'application n'utilise aucun service tiers qui reçoive des données de ta part. Les polices de caractères sont intégrées à l'application. Le menu de partage et l'envoi d'e-mails (suggestions, signalements, demandes de retrait) passent par les fonctions de ton téléphone, sous ta seule initiative.</p></section>
+<section id="conservation"><h2><span class="num">06</span> Durée de conservation</h2><p>Les données locales sont conservées sur ton téléphone jusqu'à ce que tu les supprimes ou que tu désinstalles l'application. Si tu nous écris, nous conservons ton message le temps de traiter ta demande.</p></section>
+<section id="droits"><h2><span class="num">07</span> Tes droits</h2><p>StarSeat ne collectant aucune donnée sur nos serveurs, tu gardes un contrôle total : tu peux effacer un plan, ou tout supprimer en désinstallant l'application. Pour toute question, écris-nous (voir « Contact »).</p></section>
+<section id="retrait"><h2><span class="num">08</span> Personnalités citées et demande de retrait</h2><p>Les noms de personnalités qui figurent dans la liste sont cités à titre purement informatif, à partir de sources publiques. Ces personnalités n'ont aucun lien avec l'application, ne l'ont pas approuvée et ne la soutiennent pas. <strong>Aucune photo de ces personnes n'est utilisée</strong> ; les visages de l'écran d'accueil sont des personnages inventés. Les choix affichés dans les plans sont ceux des joueurs et n'engagent qu'eux.</p><p>Si tu es une personnalité citée (ou son représentant) et souhaites que ton nom soit retiré, écris-nous à l'adresse ci-dessous : <strong>il sera retiré rapidement</strong>.</p></section>
+<section id="age"><h2><span class="num">09</span> Âge minimum</h2><p>StarSeat ne s'adresse pas spécifiquement aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée à leur sujet.</p></section>
+<section id="modifs"><h2><span class="num">10</span> Modifications de cette politique</h2><p>Cette politique peut évoluer si l'application change, par exemple si de la publicité était ajoutée un jour. La date de dernière mise à jour est indiquée en haut de cette page.</p></section>
+<section id="contact"><h2><span class="num">11</span> Contact</h2><p>Pour toute question, suggestion de nom, signalement d'erreur ou demande de retrait :</p><div class="contact-block"><span class="name">Anthony Raitif</span><span class="email">lehuddle.pro@gmail.com</span></div><h3>Assistance</h3><p>Pour obtenir de l'aide, suggérer un nom, signaler une erreur ou demander le retrait d'un nom, écris à l'adresse ci-dessus : nous répondons en général sous quelques jours.</p></section>
+  <footer>StarSeat — com.antohny.toptable</footer>
+</div>
+</body>
+</html>
